@@ -1,6 +1,8 @@
+
 :root {
   --primary: ##777;
   --secondary: #ccc;
+  --themeColor:#0400ff;
   --font-size:1.2rem;
 }
 
@@ -13,8 +15,12 @@ header {
 .logo{
   float:left;
 }
-.margin-right-auto{
-  margin-right:auto;
+.logo svg{
+  width: 30px;
+    height: 30px;
+}
+.margin-left-auto{
+  margin-left:auto;
 }
 .links{
   float:right;
@@ -43,12 +49,17 @@ header {
 footer{
   position:fixed;
   bottom:0;
+  left:0;
   background-color:  var(--secondary);
   width: 100%;
   padding:10px;
 }
 .social-media-content{
   float: left;
+}
+.social-media-content svg{
+  margin-right: 10px;
+  color: var(--themeColor);
 }
 @media only screen and (max-width: 768px) {
   .card-container{
