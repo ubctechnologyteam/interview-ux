@@ -11,6 +11,112 @@ body {
 }
 
 .container {
+  text-align: justify;
+
+}
+
+.navbar{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgb(11, 49, 82);
+}
+.nav-links{
+ display: flex;
+ gap: 1rem;
+ list-style: none;
+ a{
+color: aliceblue;
+}
+
+}
+
+.hamburgerMenu{
+  display: none;
+}
+
+.hero{
+
   text-align: center;
-  padding: 20px;
+  padding: 4rem 1rem;
+  background:chocolate ;
+  
+  p{
+    text-align: justify;
+  }
+
+}
+
+
+.cta_button{
+
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+.features{
+  padding: 2rem 1rem;
+  text-align: center;
+  grid{
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(autofit ,minmax(250px,1fr));
+  }
+  .f_cards{
+
+    padding: 1rem;
+    border: 1px solid #fff;
+  }
+}
+
+footer {
+  background-color: rgb(11 49 82);
+text-align: center;
+padding: 1rem;
+border-radius: 4px;
+.social-media a {
+  margin:  0  0.5 rem ;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+
+}
+}
+
+
+.contactForm input {
+  padding: 0.5rem;
+  border:  1px solid  #ddd;
+  border-radius: 4px;
+
+
+}
+
+@media  (max-width:768px){
+  .hamburgerMenu{
+
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+  }
+
+  .nav-links{
+    flex-direction: column;
+    display: none;
+    background:#000;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  }
+
 }
